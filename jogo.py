@@ -3,6 +3,9 @@ print('Bem-vindo, ao jogo de advinhação')
 print('********************************')
 
 numero_secreto = 42
-chute = input("Digite um numero: ")
+chute = int(input("Digite um numero: "))
 
-print("Você digitou ", chute)
+if(numero_secreto == chute):
+    print("Você digitou", chute, ", Você acertou!!!")
+else:
+    print('Você errou!')
