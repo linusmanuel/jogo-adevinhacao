@@ -4,9 +4,8 @@ print('********************************')
 
 numero_secreto = 42
 total_de_tentativas = 3
-rodada = 1
 
-while(rodada <= total_de_tentativas):
+for rodada in range(0, total_de_tentativas):
     print(f'TENTATIVA  {rodada}  de {total_de_tentativas}')
     chute = int(input("Digite um numero: "))
     acertou = numero_secreto == chute
