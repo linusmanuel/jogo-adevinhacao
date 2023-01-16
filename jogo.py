@@ -11,7 +11,7 @@ for rodada in range(0, total_de_tentativas):
 
     if(chute < 0 or chute > 100):
         print('Número inválido, digite um número entre 1 e 100!')
-        break
+        continue
 
     acertou = numero_secreto == chute
     maior = chute > numero_secreto
