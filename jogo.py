@@ -8,9 +8,15 @@ total_de_tentativas = 3
 for rodada in range(0, total_de_tentativas):
     print(f'TENTATIVA  {rodada}  de {total_de_tentativas}')
     chute = int(input("Digite um numero: "))
+
+    if(chute < 0 or chute > 100):
+        print('Número inválido, digite um número entre 1 e 100!')
+        break
+
     acertou = numero_secreto == chute
     maior = chute > numero_secreto
     menor = chute < numero_secreto
+
 
     if(acertou):
         print("Você digitou", chute, ", Você acertou!!!")
