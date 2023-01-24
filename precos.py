@@ -1,6 +1,3 @@
-precos = [100, 9, 265, 44]
-produto = ['Massa', 'Arroz', 'Carne', 'Leite']
-
-
-for preco in precos:
-    print(f'{preco:07.2f} KZ')
+computerNumber = 10
+userNumber = int(input('Informe um numero inteiro: '))
+print(f'A soma é {computerNumber + userNumber}')
